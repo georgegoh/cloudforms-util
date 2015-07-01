@@ -15,13 +15,13 @@ Packager:	George Goh <george.goh@redhat.com>
 Aliases and environment settings to make working with CloudForms on the command line easier.
 
 %prep
-%setup -q
 
 %build
 
 %install
 mkdir -p "%{buildroot}/etc/profile.d"
 mkdir "%{buildroot}/root"
+cd %{_builddir}/%{name}-%{version}
 install --backup --mode=0644 src/motd "%{buildroot}/etc/motd"
 install --backup --mode=0644 src/cloudforms-util.sh "%{buildroot}/etc/profile.d/cloudforms-util.sh"
 install --backup --mode=0644 src/irbrc "%{buildroot}/root/.irbrc"
