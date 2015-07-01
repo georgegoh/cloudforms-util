@@ -1,5 +1,5 @@
 Name:		cloudforms-util
-Version:	0.2
+Version:	0.3
 Release:	1
 Summary:	Utilities for CloudForms
 

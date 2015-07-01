@@ -1,4 +1,4 @@
-VERSION := 0.2
+VERSION := 0.3
 BUILD_DIR := $(shell rpmbuild -E %{_builddir})/cloudforms-util-$(VERSION)
 
 rpm:
