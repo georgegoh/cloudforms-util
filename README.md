@@ -12,3 +12,7 @@ Aliases and environment settings to make working with CloudForms on the command 
    log   - cd /var/www/miq/vmdb/log
    
    scrub - truncate the automate and evm logs.
+
+## To Build
+
+    make rpm
