@@ -1,5 +1,0 @@
-def get_evm
-    MiqAeMethodService::MiqAeService.new(MiqAeEngine::MiqAeWorkspaceRuntime.new)
-end
-
-$evm = get_evm
