@@ -6,6 +6,8 @@ Aliases and environment settings to make working with CloudForms on the command 
 
     make rpm
 
+To get a pre-built rpm, see this link https://packagecloud.io/georgegoh/cloudforms-util
+
 ## To install
 
 Copy the rpm into the CloudForms VM and perform a normal RPM install.
