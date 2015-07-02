@@ -1,6 +1,6 @@
 Name:		cloudforms-util
 Version:	0.3
-Release:	1
+Release:	2
 Summary:	Utilities for CloudForms
 
 Group:		Cloud Management Tools
@@ -41,4 +41,8 @@ echo "  log   - cd /var/www/miq/vmdb/log" >> /etc/motd
 echo "  scrub - truncate the automate and evm logs." >> /etc/motd
 
 %changelog
+* Thu Jul 02 2015 Eduardo Minguez <eminguez@redhat.com> 0.3-2
+- Changed tail -f by less +F
 
+* Thu Jul 02 2015 George Goh <ggoh@redhat.com> 0.3-1
+- Initial RPM release
