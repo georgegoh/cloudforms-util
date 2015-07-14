@@ -5,7 +5,7 @@ export EVM=${CF_LOGS}/evm.log
 
 alias cf='echo "Starting CloudForms Console"; pushd /var/www/miq/vmdb; rails c; popd'
 alias log='cd $CF_LOGS'
-alias auto='tail -f ${AUTO}'
-alias evm='tail -f ${EVM}'
+alias auto='less +F ${AUTO}'
+alias evm='less +F ${EVM}'
 alias scrub='truncate -s 0 ${CF_LOGS}/evm.log; truncate -s 0 ${CF_LOGS}/automation.log'
 
