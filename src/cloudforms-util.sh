@@ -8,4 +8,4 @@ alias log='cd $CF_LOGS'
 alias auto='less +F ${AUTO}'
 alias evm='less +F ${EVM}'
 alias scrub='truncate -s 0 ${CF_LOGS}/evm.log; truncate -s 0 ${CF_LOGS}/automation.log'
-
+alias console="LOCK_CONSOLE=false /bin/appliance_console"
