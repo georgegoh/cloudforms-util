@@ -1,7 +1,7 @@
 Shortcut aliases for CloudForms:
   cf    - bring up the rails console with $evm object loaded
-  auto  - tail -f automate.log
-  evm   - tail -f evm.log
+  auto  - less +F automate.log
+  evm   - less +F evm.log
   log   - cd /var/www/miq/vmdb/log
   scrub - truncate the automate and evm logs
   console - CloudForms appliance console

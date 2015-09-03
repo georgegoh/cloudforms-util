@@ -32,13 +32,15 @@ install --backup --mode=0644 src/irbrc_rails "%{buildroot}/root/.irbrc_rails"
 /root/.irbrc_rails
 
 %post
-echo "Shortcut aliases for CloudForms:" >> /etc/motd
-echo "  cf    - bring up the rails console with $evm object loaded" >> /etc/motd
-echo "  auto  - tail -f automate.log" >> /etc/motd
-echo "  evm   - tail -f evm.log" >> /etc/motd
-echo "  log   - cd /var/www/miq/vmdb/log" >> /etc/motd
-echo "  scrub - truncate the automate and evm logs" >> /etc/motd
-echo "  console - CloudForms appliance console" >> /etc/motd
+cat > /etc/motd << 'EOF'
+Shortcut aliases for CloudForms:
+  cf    - bring up the rails console with $evm object loaded
+  auto  - less +F automate.log
+  evm   - less +F evm.log
+  log   - cd /var/www/miq/vmdb/log
+  scrub - truncate the automate and evm logs
+  console - CloudForms appliance console
+EOF
 
 %changelog
 * Tue Jul 14 2015 Eduardo Minguez <eminguez@redhat.com> 0.3-3
