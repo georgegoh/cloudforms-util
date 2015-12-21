@@ -1,6 +1,6 @@
 Name:      cloudforms-util
 Version:   0.3
-Release:   3
+Release:   4
 Summary:   Utilities for CloudForms
 
 Group:     Applications/System
@@ -43,6 +43,9 @@ Shortcut aliases for CloudForms:
 EOF
 
 %changelog
+* Mon Dec 21 2015 George Goh <george.goh@redhat.com> 0.3-4
+- Updated profile.d script with the 'console' alias
+
 * Tue Jul 14 2015 Eduardo Minguez <eminguez@redhat.com> 0.3-3
 - Added appliance console
 
