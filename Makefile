@@ -1,9 +1,10 @@
 VERSION := 0.3
-BUILD_DIR := $(shell rpmbuild -E %{_builddir})/cloudforms-util-$(VERSION)
+RELEASE := 4
+BUILD_DIR := $(shell rpmbuild -E %{_builddir})/cloudforms-util-$(VERSION)-$(RELEASE)
 
 rpm:
 	mkdir -p $(BUILD_DIR)
-	git archive $(VERSION) | tar -x -C $(BUILD_DIR)
+	git archive $(VERSION)-$(RELEASE) | tar -x -C $(BUILD_DIR)
 	rpmbuild -bb cloudforms-util.spec
 
 install:

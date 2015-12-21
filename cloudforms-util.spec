@@ -6,7 +6,7 @@ Summary:   Utilities for CloudForms
 Group:     Applications/System
 License:   GPLv3+
 URL:       https://github.com/georgegoh/%{name}
-Source0:   https://github.com/georgegoh/%{name}/archive/%{version}.tar.gz
+Source0:   https://github.com/georgegoh/%{name}/archive/%{version}-%{release}.tar.gz
 
 BuildArch: noarch
 
@@ -20,7 +20,7 @@ Aliases and environment settings to make working with CloudForms on the command 
 %install
 mkdir -p "%{buildroot}/etc/profile.d"
 mkdir "%{buildroot}/root"
-cd %{_builddir}/%{name}-%{version}
+cd %{_builddir}/%{name}-%{version}-%{release}
 install --backup --mode=0644 src/cloudforms-util.sh "%{buildroot}/etc/profile.d/cloudforms-util.sh"
 install --backup --mode=0644 src/irbrc "%{buildroot}/root/.irbrc"
 install --backup --mode=0644 src/irbrc_rails "%{buildroot}/root/.irbrc_rails"
