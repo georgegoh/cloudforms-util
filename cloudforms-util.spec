@@ -1,6 +1,6 @@
 Name:      cloudforms-util
-Version:   0.3
-Release:   4
+Version:   0.4
+Release:   1
 Summary:   Utilities for CloudForms
 
 Group:     Applications/System
