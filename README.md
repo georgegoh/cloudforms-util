@@ -7,7 +7,7 @@ Aliases and environment settings to make working with CloudForms on the command 
     make rpm
 
 To get a pre-built rpm, see this link https://packagecloud.io/georgegoh/cloudforms-util
-Latest RPM package: https://packagecloud.io/georgegoh/cloudforms-util/el/7/noarch/cloudforms-util-0.3-4.noarch.rpm
+Latest RPM package: https://packagecloud.io/georgegoh/cloudforms-util/el/7/noarch/cloudforms-util-0.4-1.noarch.rpm
 
 ## To install
 
